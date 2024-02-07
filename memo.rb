@@ -10,6 +10,7 @@ memo_type = gets.to_i # ユーザーの入力値を取得し、数字へ変換�
   
     file_name = gets.to_s
     puts "テキストを入力して下さい"
+    puts "完了したら Ctrl + D を押して下さい"
   
     memo = STDIN.gets.to_s.chomp
     CSV.open("#{file_name}.csv" ,"w") do |csv|
@@ -21,6 +22,7 @@ memo_type = gets.to_i # ユーザーの入力値を取得し、数字へ変換�
    
    file_name = gets.to_s
    puts "テキストを入力して下さい"
+   puts "完了したら Ctrl + D を押して下さい"
    
    memo = STDIN.gets.to_s.chomp
    CSV.open("#{file_name}.csv" ,"a") do |csv|
